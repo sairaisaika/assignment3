@@ -10,7 +10,9 @@ import os
 def load_file():
     # get the current path
     current_path = os.path.abspath(__file__)
+    # get the father path
     father_path = os.path.abspath(os.path.dirname(current_path) + os.path.sep + ".")
+    # get the 13100262.csv path
     config_file_path = os.path.join(os.path.abspath(os.path.dirname(father_path) + os.path.sep + ".."), 'csvFile',
                                     '13100262.csv')
     return config_file_path
