@@ -5,7 +5,7 @@
 # @Software: PyCharm
 
 import csv
-from csvReader.recordModel.data_model import dataModel
+from csvReader.recordModel.data_model import data_model
 
 file = "C://Users/saira/PycharmProjects/assignment3/csvFile/13100262.csv"
 
