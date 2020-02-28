@@ -1,16 +1,16 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2/27/2020 10:57 PM
 # @Author  : WeihaoLiao
-# @FileName: readCsv.py
+# @FileName: read_csv.py
 # @Software: PyCharm
 
 import csv
-from csvReader.recordModel.dataModel import dataModel
+from csvReader.recordModel.data_model import dataModel
 
 file = "C://Users/saira/PycharmProjects/assignment3/csvFile/13100262.csv"
 
 
-class readCsv:
+class read_csv:
     # The Simple function to read the file
     with open(file, 'r', encoding='utf-8-sig') as ifile:
         read = csv.reader(ifile)

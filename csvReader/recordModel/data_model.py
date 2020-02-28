@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2/27/2020 10:57 PM
 # @Author  : WeihaoLiao
-# @FileName: dataModel.py
+# @FileName: data_model.py
 # @Software: PyCharm
 from null import Null
 
@@ -24,7 +24,7 @@ DECIMALS = Null
 
 
 # class moudle object
-class dataModel:
+class data_model:
     def __init__(self, REF_DATE, GEO, DGUID, Sex, Age_group, Student_response, UOM, UOM_ID, SCALAR_FACTOR, SCALAR_ID,
                  VECTOR, COORDINATE, VALUE, STATUS, SYMBOL, TERMINATED, DECIMALS):
         self.REF_DATE = REF_DATE
