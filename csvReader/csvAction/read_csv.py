@@ -6,8 +6,9 @@
 
 import csv
 from csvReader.recordModel.data_model import data_model
+from csvReader.csvAction.load_file import load_file
 
-file = "C://Users/saira/PycharmProjects/assignment3/csvFile/13100262.csv"
+file = load_file()
 
 
 class read_csv:
@@ -41,7 +42,7 @@ class read_csv:
             TERMINATED = row[15]
             DECIMALS = row[16]
 
-            moudle = dataModel(REF_DATE, GEO, DGUID, Sex, Age_group, Student_response, UOM, UOM_ID, SCALAR_FACTOR,
+            moudle = data_model(REF_DATE, GEO, DGUID, Sex, Age_group, Student_response, UOM, UOM_ID, SCALAR_FACTOR,
                                SCALAR_ID, VECTOR, COORDINATE, VALUE, STATUS, SYMBOL, TERMINATED, DECIMALS)
 
             print(moudle)
