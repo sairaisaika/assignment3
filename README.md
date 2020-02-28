@@ -1,4 +1,4 @@
-"# assignment3" 
+"# assignment3
 Assignment 03 – Proof of Concept Delivery – See Brightspace for due dates
 Refer to the Course Section Information (CSI) document posted in Brightspace under Course
 Information for additional requirements common to all assignments.
@@ -88,4 +88,4 @@ Tasks
       Only include a source code file you created or edited yourself as well as a unit test code file you
       created or edited within the MS Word document.
  Do not copy and paste code from the web into your demonstration program, it must be your own
-   work.
+   work." 
