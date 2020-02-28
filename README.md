@@ -1,4 +1,4 @@
-"# assignment3  
+"# assignment3"
 Assignment 03 – Proof of Concept Delivery – See Brightspace for due dates  
 Refer to the Course Section Information (CSI) document posted in Brightspace under Course  
 Information for additional requirements common to all assignments.  
@@ -59,33 +59,33 @@ Tasks
     o Code figures to demonstrate use of variables, a loop structure, a decision structure, File-IO  
       against the dataset, exception handling, use of an API library, an array (or similar data  
       structure) and unit testing.  
-    o Either:
-         Use small code examples for each topic, or
-         Indicate what line numbers in a larger code sample illustrate each concept.
-         You must indicate clearly to your professor that you can identify what parts of
-          your code illustrate and match to each programming concept.
- Heading with name “2 Program Architecture”
-    o Briefly outline how your modules / classes / code files are organized into layers or similar
-      architectural design. UML Diagrams are needed as part of your write up. See this website as a
-      quick example / review as well as see notes inside the rubric as well.
-      https://www.uml-diagrams.org/multi-layered-application-uml-model-diagram-example.html
-      Note that a single source code file, with methods, is not layered. It needs to be broken out into
-      separate files / classes / modules. See the example provided on Brightspace.
- Heading with name “3 Program Demonstration via Screen Shots”
-    o Include screen shots of your running program, I should see records from the data set
-      displayed, as well as creating, updating, deleting records and re-loading and saving records.
-      Your full name must appear within the screen shots.
- Heading with name “4 Unit Testing Demonstration via Screen Shots”
-    o Include screen shot(s) of your running unit test(s), this may be either within an IDE or run
-      from a console. Your full name must appear within the screen shot(s).
- Heading with name “5 Source Code Commenting Example”
-    o Copy and paste one source code file from your project to demonstrate you can write
-      programming comments using documentation-comments. Use a font size of 10 point, with a
-      monospaced font of your choosing.
-    o Also copy and paste your unit test source code file, including programmer comments into this
-      section. Use a font size of 10 point, with a monospaced font of your choosing.
-    o Note: Some frameworks generate many code files, many of them will never be edited by you.
-      Only include a source code file you created or edited yourself as well as a unit test code file you
-      created or edited within the MS Word document.
- Do not copy and paste code from the web into your demonstration program, it must be your own
-   work." 
+    o Either:  
+         Use small code examples for each topic, or  
+         Indicate what line numbers in a larger code sample illustrate each concept.  
+         You must indicate clearly to your professor that you can identify what parts of  
+          your code illustrate and match to each programming concept.  
+ Heading with name “2 Program Architecture”  
+    o Briefly outline how your modules / classes / code files are organized into layers or similar  
+      architectural design. UML Diagrams are needed as part of your write up. See this website as a  
+      quick example / review as well as see notes inside the rubric as well.  
+      https://www.uml-diagrams.org/multi-layered-application-uml-model-diagram-example.html  
+      Note that a single source code file, with methods, is not layered. It needs to be broken out into  
+      separate files / classes / modules. See the example provided on Brightspace.  
+ Heading with name “3 Program Demonstration via Screen Shots”  
+    o Include screen shots of your running program, I should see records from the data set  
+      displayed, as well as creating, updating, deleting records and re-loading and saving records.  
+      Your full name must appear within the screen shots.  
+ Heading with name “4 Unit Testing Demonstration via Screen Shots”  
+    o Include screen shot(s) of your running unit test(s), this may be either within an IDE or run  
+      from a console. Your full name must appear within the screen shot(s).  
+ Heading with name “5 Source Code Commenting Example”  
+    o Copy and paste one source code file from your project to demonstrate you can write  
+      programming comments using documentation-comments. Use a font size of 10 point, with a  
+      monospaced font of your choosing.  
+    o Also copy and paste your unit test source code file, including programmer comments into this  
+      section. Use a font size of 10 point, with a monospaced font of your choosing.  
+    o Note: Some frameworks generate many code files, many of them will never be edited by you.  
+      Only include a source code file you created or edited yourself as well as a unit test code file you  
+      created or edited within the MS Word document.  
+ Do not copy and paste code from the web into your demonstration program, it must be your own  
+   work.  
