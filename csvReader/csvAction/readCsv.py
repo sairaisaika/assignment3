@@ -9,15 +9,16 @@ from csvReader.recordModel.dataModel import dataModel
 
 file = "C://Users/saira/PycharmProjects/assignment3/csvFile/13100262.csv"
 
+
 class readCsv:
-    #The Simple function to read the file
-    with open(file,'r',  encoding='utf-8-sig') as ifile:
+    # The Simple function to read the file
+    with open(file, 'r', encoding='utf-8-sig') as ifile:
         read = csv.reader(ifile)
         a = read.__next__()
         for c in a:
-            #print the colum name
+            # print the colum name
             print(c, end=" ")
-            #print my name
+            # print my name
         print("Weihao Liao")
 
         # loop to read teh csv file and give to the private variables
@@ -40,5 +41,7 @@ class readCsv:
             TERMINATED = row[15]
             DECIMALS = row[16]
 
+            moudle = dataModel(REF_DATE, GEO, DGUID, Sex, Age_group, Student_response, UOM, UOM_ID, SCALAR_FACTOR,
+                               SCALAR_ID, VECTOR, COORDINATE, VALUE, STATUS, SYMBOL, TERMINATED, DECIMALS)
 
-            moudle = dataModel(REF_DATE,GEO,DGUID,Sex,Age_group,Student_response,UOM,UOM_ID,SCALAR_FACTOR,SCALAR_ID,VECTOR,COORDINATE,VALUE,STATUS,SYMBOL,TERMINATED,DECIMALS)
+            print(moudle)
