@@ -56,7 +56,9 @@ class csv_crud:
 
     # update elements from row
     def update_element(self):
+        '''
         REF_DATE = []
+        GEO=[]
         orgData = dataList[self]
         print("the number " + str(self + 1) + " row is:" + orgData)
         for i in range(len(orgData)):
@@ -64,6 +66,38 @@ class csv_crud:
                 REF_DATE.append(orgData[i])
             else:
                 break
-
         STRING_REF = "".join(REF_DATE)
         print(STRING_REF)
+        '''
+        data_map.view_header()
+        split_sym = []
+        orgData = "".join(dataList[self])
+        for i in range(len(orgData)):
+            if orgData[i] == '，':
+                split_sym.append(i)
+
+        print(orgData)
+
+
+
+        REF_DATE = orgData[0: split_sym[0]]
+        GEO = orgData[split_sym[0]:split_sym[1]]
+        DGUID = orgData[split_sym[1]:split_sym[2]]
+        Sex = orgData[split_sym[2]:split_sym[3]]
+        Age_group = orgData[split_sym[3]:split_sym[4]]
+        Student_response = orgData[split_sym[4]:split_sym[5]]
+        UOM = orgData[split_sym[5]:split_sym[6]]
+        UOM_ID = orgData[split_sym[6]:split_sym[7]]
+        SCALAR_FACTOR = orgData[split_sym[7]:split_sym[8]]
+        SCALAR_ID = orgData[split_sym[8]:split_sym[9]]
+        VECTOR = orgData[split_sym[9]:split_sym[10]]
+        COORDINATE = orgData[split_sym[10]:split_sym[11]]
+        VALUE = orgData[split_sym[11]:split_sym[12]]
+        STATUS = orgData[split_sym[12]:split_sym[13]]
+        SYMBOL = orgData[split_sym[13]:split_sym[14]]
+        TERMINATED = orgData[split_sym[14]:split_sym[15]]
+        DECIMALS = orgData[split_sym[15]:split_sym[16]]
+
+        model = data_model(REF_DATE, GEO, DGUID, Sex, Age_group, Student_response, UOM, UOM_ID,
+                           SCALAR_FACTOR,
+                           SCALAR_ID, VECTOR, COORDINATE, VALUE, STATUS, SYMBOL, TERMINATED, DECIMALS)
