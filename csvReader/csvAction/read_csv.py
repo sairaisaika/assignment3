@@ -5,14 +5,16 @@
 # @Software: PyCharm
 import re
 import csv
-from csvReader.recordModel.data_model import data_model
-from csvReader.csvAction.load_file import load_file
+from csvReader.recordModel.data_model import *
+from csvReader.csvAction.load_file import *
+from csvReader.dataMap.data_map import *
 
 # get the csv file path
 file = load_file()
 
 
 class read_csv:
+
 
     # if the row have number return 2, use to defined if there is not data column
     def check_num(self):
@@ -56,7 +58,8 @@ class read_csv:
                 TERMINATED = row[15]
                 DECIMALS = row[16]
 
-                moudle = data_model(REF_DATE, GEO, DGUID, Sex, Age_group, Student_response, UOM, UOM_ID, SCALAR_FACTOR,
-                                    SCALAR_ID, VECTOR, COORDINATE, VALUE, STATUS, SYMBOL, TERMINATED, DECIMALS)
+                model = data_model(REF_DATE, GEO, DGUID, Sex, Age_group, Student_response, UOM, UOM_ID, SCALAR_FACTOR,
+                                   SCALAR_ID, VECTOR, COORDINATE, VALUE, STATUS, SYMBOL, TERMINATED, DECIMALS)
 
-                print(moudle)
+                data_map.sort(model.__str__())
+                print(model)

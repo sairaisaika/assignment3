@@ -3,3 +3,12 @@
 # @Author  : WeihaoLiao
 # @FileName: data_map.py
 # @Software: PyCharm
+
+
+dataList = []
+
+
+class data_map:
+
+    def sort(self):
+        dataList.append(self)
