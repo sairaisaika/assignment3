@@ -55,5 +55,15 @@ class csv_crud:
         data_map.view_list(self)
 
     # update elements from row
-    def update_element(self, update_postition, new_data):
-        print("update row")
+    def update_element(self):
+        REF_DATE = []
+        orgData = dataList[self]
+        print("the number " + str(self + 1) + " row is:" + orgData)
+        for i in range(len(orgData)):
+            if not orgData[i] == '，':
+                REF_DATE.append(orgData[i])
+            else:
+                break
+
+        STRING_REF = "".join(REF_DATE)
+        print(STRING_REF)

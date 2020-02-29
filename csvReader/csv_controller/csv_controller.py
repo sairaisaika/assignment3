@@ -39,7 +39,10 @@ class csv_controller:
                 csv_crud.delete_row(num_row)
             break
         while user_input == 4:
-            csv_crud.update_element()
+            input_row = input("Please inter the row you want to update:")
+            if input_row.isdigit():
+                num_row = int(input_row) - 1
+                csv_crud.update_element(num_row)
             break
         while user_input == 5:
             exit()
