@@ -5,6 +5,9 @@
 # @Software: PyCharm
 
 class csv_controller:
-    print("option1: Create new record \n"
-          "option2: Delete record  \n"
-          "option3: Select and edit record")
+    print("option1: Show all record \n"
+          "option2: Create new record \n"
+          "option3: Delete record  \n"
+          "option4: Select and edit record \n")
+
+    input("whcih option do you want?")
