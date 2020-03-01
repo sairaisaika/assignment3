@@ -56,20 +56,7 @@ class csv_crud:
 
     # update elements from row
     def update_element(self):
-        '''
-        REF_DATE = []
-        GEO=[]
-        orgData = dataList[self]
-        print("the number " + str(self + 1) + " row is:" + orgData)
-        for i in range(len(orgData)):
-            if not orgData[i] == '，':
-                REF_DATE.append(orgData[i])
-            else:
-                break
-        STRING_REF = "".join(REF_DATE)
-        print(STRING_REF)
-        '''
-        data_map.view_header()
+        data_map.view_header("")
         split_sym = []
         orgData = "".join(dataList[self])
         for i in range(len(orgData)):
@@ -78,26 +65,35 @@ class csv_crud:
 
         print(orgData)
 
-
+        user_choice = input("which data you want to change? :")
+        user_input = input("input the data you want to change: ")
 
         REF_DATE = orgData[0: split_sym[0]]
-        GEO = orgData[split_sym[0]:split_sym[1]]
-        DGUID = orgData[split_sym[1]:split_sym[2]]
-        Sex = orgData[split_sym[2]:split_sym[3]]
-        Age_group = orgData[split_sym[3]:split_sym[4]]
-        Student_response = orgData[split_sym[4]:split_sym[5]]
-        UOM = orgData[split_sym[5]:split_sym[6]]
-        UOM_ID = orgData[split_sym[6]:split_sym[7]]
-        SCALAR_FACTOR = orgData[split_sym[7]:split_sym[8]]
-        SCALAR_ID = orgData[split_sym[8]:split_sym[9]]
-        VECTOR = orgData[split_sym[9]:split_sym[10]]
-        COORDINATE = orgData[split_sym[10]:split_sym[11]]
-        VALUE = orgData[split_sym[11]:split_sym[12]]
-        STATUS = orgData[split_sym[12]:split_sym[13]]
-        SYMBOL = orgData[split_sym[13]:split_sym[14]]
-        TERMINATED = orgData[split_sym[14]:split_sym[15]]
-        DECIMALS = orgData[split_sym[15]:split_sym[16]]
+        GEO = orgData[split_sym[0] + 1:split_sym[1]]
+        DGUID = orgData[split_sym[1] + 1:split_sym[2]]
+        Sex = orgData[split_sym[2] + 1:split_sym[3]]
+        Age_group = orgData[split_sym[3] + 1:split_sym[4]]
+        Student_response = orgData[split_sym[4] + 1:split_sym[5]]
+        UOM = orgData[split_sym[5] + 1:split_sym[6]]
+        UOM_ID = orgData[split_sym[6] + 1:split_sym[7]]
+        SCALAR_FACTOR = orgData[split_sym[7] + 1:split_sym[8]]
+        SCALAR_ID = orgData[split_sym[8] + 1:split_sym[9]]
+        VECTOR = orgData[split_sym[9] + 1:split_sym[10]]
+        COORDINATE = orgData[split_sym[10] + 1:split_sym[11]]
+        VALUE = orgData[split_sym[11] + 1:split_sym[12]]
+        STATUS = orgData[split_sym[12] + 1:split_sym[13]]
+        SYMBOL = orgData[split_sym[13] + 1:split_sym[14]]
+        TERMINATED = orgData[split_sym[14] + 1:split_sym[15]]
+        DECIMALS = orgData[split_sym[15] + 1:]
 
-        model = data_model(REF_DATE, GEO, DGUID, Sex, Age_group, Student_response, UOM, UOM_ID,
-                           SCALAR_FACTOR,
-                           SCALAR_ID, VECTOR, COORDINATE, VALUE, STATUS, SYMBOL, TERMINATED, DECIMALS)
+        result_list = [REF_DATE, GEO, DGUID, Sex, Age_group, Student_response, UOM, UOM_ID,
+                       SCALAR_FACTOR,
+                       SCALAR_ID, VECTOR, COORDINATE, VALUE, STATUS, SYMBOL, TERMINATED, DECIMALS]
+
+        position = result_list.index(user_choice)
+        result_list[position] = user_input
+        str_result_list = "，".join(result_list)
+        dataList[self] = str_result_list
+        print("You successful change a row, result will show in the next 2 second")
+        time.sleep(2)
+        data_map.view_list("")
