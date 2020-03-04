@@ -5,13 +5,11 @@
 # @Software: PyCharm
 
 
-from null import Null
 
 
 n = 17
 dataList = []
 dataHeader = []
-numOfRows = Null
 
 class data_map:
 

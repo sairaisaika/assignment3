@@ -3,25 +3,6 @@
 # @Author  : WeihaoLiao
 # @FileName: data_model.py
 # @Software: PyCharm
-from null import Null
-
-REF_DATE = Null
-GEO = Null
-DGUID = Null
-Age_group = Null
-Student_response = Null
-UOM = Null
-UOM_ID = Null
-SCALAR_FACTOR = Null
-SCALAR_ID = Null
-VECTOR = Null
-COORDINATE = Null
-VALUE = Null
-STATUS = Null
-SYMBOL = Null
-TERMINATED = Null
-DECIMALS = Null
-
 
 # class moudle object
 class data_model:
