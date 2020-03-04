@@ -5,7 +5,7 @@
 # @Software: PyCharm
 from csvReader.csvAction.csv_crud import *
 
-
+# csv_controller is the application main process
 class csv_controller:
     data_map.view_header("")
     data_map.view_list("")

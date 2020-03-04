@@ -5,6 +5,7 @@
 # @Software: PyCharm
 import re
 import csv
+
 from csvReader.recordModel.data_model import *
 from csvReader.csvAction.load_file import *
 from csvReader.dataMap.data_map import *
@@ -12,7 +13,7 @@ from csvReader.dataMap.data_map import *
 # get the csv file path
 file = load_file()
 
-
+# this class is use to read csv file, if there is Exeption it will catch and response
 class read_csv:
 
     # if the row have number return 2, use to defined if there is not data column
